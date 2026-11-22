@@ -13,6 +13,6 @@ export class HeadBar {
   router=inject(Router)
 
   navigateToWishList() {
-    this.router.navigate(['wish-list']);
+    this.router.navigate(['/wishlist']);
   }
 }

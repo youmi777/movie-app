@@ -21,7 +21,7 @@ export class MovieDetail implements OnInit {
     this.route.paramMap.pipe(
       switchMap(params => {
         const id = Number(params.get('id'));
-        return this.movieService.getMovieByID(id!)
+        return this.movieService.getMovieById(id!)
       })).subscribe(movie=>this.movieService.selectedMovie.set(movie))
   }
 
